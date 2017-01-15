@@ -1,0 +1,69 @@
+Sept22.
+
+P1 explanation
+
+int getbest(void* ptr, int param size_t n_function){
+	int(**functions)(int) = ptr;
+	int best_result = -0x7FFFFFFF;
+	int function = 0;
+	for(size_t i=0; i < n_functions; i++){
+		int res = functions[i](param); // this part was the important part
+		if(res > best_result){
+			best_result = res;
+			best_function = i;
+		}	
+}
+}
+
+b.find_best = getbest;
+
+The pointer is beginning of array and array has pointer to some function. 
+A ¨ b1,b2,b3
+     «
+@@ C1
+
+P2: 
+file-system stuff. 
+tester -> fs -> drive
+file system must support 4 operations. 
+if its works, it must return 0. Non 0 is indicated error. 
+must save all the data to hard drive, no global or static variable
+
+has a cylinder and sectors in each cylinder and each bytes in sector
+
+2thing we could do
+either read a sector or write a sector
+better go read wiki at file-location system
+
+filesystem:
+msdos returning -EINVAL makes everything quite good
+http://lxr.free-electrons.com/source/fs/ext2/namei.c?v=3.16
+https://github.com/Xilinx/linux-xlnx/blob/master/fs/fat/namei_msdos.c
+
+layer file system:
+writes on top of existing filesystem
+
+boot sequence:
+	boot strapping = keep loading from kernel and kernle will load itself.
+	BIOS = chip in the motherboard, and hardcoded to and contains to find the devices and start OS
+	UEFI = has extra features, 
+	http://www.dosv.jp/feature/1103/17.htm
+
+boot loader:
+	if you don't want it = then you want to manage booting. 
+	Lilo = linux or windows loader, basic of basic
+		lilo keeps enough info from boot sector and keep the kernel running
+		https://www.ibm.com/developerworks/jp/linux/library/l-bootload/
+		it does not support other OS
+		if the boot loader does have option to get to other bootloader its possible to have 2 OS
+	Grub, 
+		go to grub.cfg
+		you don't have to update boot-sector, can look through the filesystem and find the kernel
+	go check linux-soruce-0.11/boot a
+	in 3.16 go /arch/x86/boot 
+
+interrupt service routines:
+	something that interrupt these signals(like keyboard) = BIOS
+	
+	
+0x13 

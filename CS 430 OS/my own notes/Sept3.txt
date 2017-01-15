@@ -1,0 +1,81 @@
+Sept 3
+
+Function pointer
+	read function and write function
+	(void*)(irq_handler) for supporting a lot of type (void*) op
+	Stacks:
+	-cast = inform the computer to change the type of stuff into smth else
+	-it will cause segmentation fault at 2nd row due to function pointer issue
+	-the stack starts from top of memory, and stack frame for return-pointer
+	-call the functiong Å®Å@creating another function count Å® returning pointer of count
+	-main can call the function Å® but it will overwritten by printfÅ@
+	- Å® so the pointer does not work because it does not have memory
+#include<stdio.h>
+
+void* return_pointer(int n){
+	int c = n;
+	int count(){
+		return c++;
+	}
+	return (void*)count;
+}
+
+int main(){
+	void* count_function = return_pointer(5);
+	int (*cfp)() = count_function;
+	printf("%d\n", cfp());//this part is the problem
+	printf("%d\n", cfp());
+	printf("%d\n", cfp());
+	printf("%d\n", cfp());
+	return 0;	
+}
+	- it will work just fine if we don't overwrite it
+	- the fixed one has new function named count. 
+	http://www.circuitstoday.com/void-pointers-in-c
+
+firstclass function:
+	for python, we can create as much function in the function, check return_function.py
+	you can do in c++11 but not in c!
+	check out take_self.c:
+	- functoin that takes itself as a parameter 
+	- its type of recursion = but its stupid and not efficient
+	- but function pointer is quite versatile, 
+	- you must use (void*) at line 4
+	
+Making in struct - like a class:
+	check out struct_of_functions.c
+	struct cat *self = python can actually do it by itself(in this case we did manually)
+	it is rare to see data members mixed into struct files
+
+	object oriented programming
+	
+bitwise comparison:
+	& | ^ << >> (and or xor leftShift, rightShift)
+	control shifter = like switches
+	1100 & 1011 = 1000 basically and it very helpful to target one place and turnoff
+	1010 | 0100 = 1110 or used for turnon
+
+	shifts = not usually used 
+	<< = insertion, >>=extraction
+	
+	
+Device Drivers and control registers:
+	bitwise switches used for controling devices
+	http://home.mira.net/~marcop/graphics/data_unit.gif
+	http://www.ardenstone.com/projects/seniorsem/reports/TCPheader.gif
+	flags(or control) is assigned to check if its on or not
+	
+	
+	
+	
+	
+	 
+	
+Project1:
+	bundle of struct 
+
+
+	
+	
+	
+	

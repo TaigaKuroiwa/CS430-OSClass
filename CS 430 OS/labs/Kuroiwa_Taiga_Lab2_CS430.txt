@@ -1,0 +1,25 @@
+Taiga Kuroiwa CS 430, LAB2
+
+Linux source code 3.2 
+
+1a. wc -l *.c = 64338 total
+1b. wc -l *.h = 5322 total
+	= 69660
+
+2. grep -rn "define" * | wc -l
+total = 342
+
+
+3. line 2772(prob)
+	
+2772	#define btrfs_std_error(fs_info, errno)                         \
+2773	do {                                                            \
+2774	        if ((errno))                                            \
+2775	                __btrfs_std_error((fs_info), __func__, __LINE__, (errno));\
+2776	} while (0)
+
+
+/* line 319?
+line 550?
+*/
+

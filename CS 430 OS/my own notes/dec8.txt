@@ -1,0 +1,46 @@
+parallel ports:
+https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%A9%E3%83%AC%E3%83%AB%E3%83%9D%E3%83%BC%E3%83%88
+http://homepage2.nifty.com/h-yusa/mini_cnc/ATC%20inter07.gif
+it will not power supply stuff, not like usb
+data pins(d1 - d7):
+set up the bytes and agree with device attached to
+strobe = clock signal = tells when to give bytes
+err#= error codes, and sometimes may return "on fire"
+those data pins are free to turn on and off, 
+actually it has very very few mili amps.
+
+Powerswitch Tail 2:
+
+Serial data transmission(serial ports);
+higher frequency, and only one pin to transmit.
+obviously, now usb is taken out the concept and adapt it very nicely
+
+usb pin:
+2 power related, and 2 related for data
+
+last semesters' final exams:
+Tuesday class time
+both on tuesday
+kernel c programming. pointers, malloc, casting void*, arrays, structures with pointers, 
+binary arithmatic, macros, 
+/proc
+bootloaders (in depth) -
+memory managment
+process scheduling
+parent, child, and zombie processes (forkbomb related)
+interrupts (keylogger thingy)
+medium name of terms, what is zombie process?
+
+page by page summary:
+2. multi choice
+3. process scheduling and memory use
+4. function pointers, fork. 
+5. interrupts and tricky C question
+6. Virtual Memory
+closed book
+
+
+kill nameofprogram
+killall -9 forkbomb.py(name of ur program)
+
+

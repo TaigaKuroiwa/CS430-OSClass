@@ -1,0 +1,70 @@
+Aug 25 Kernel
+
+write software in Kernel
+Kernel programming is really hard.
+
+Android uses really similar OS as Linux
+source code is available for Linux, but not at all for the others
+Nobody uses NetBSD and W2K
+we cant do kernel in isoptera + no access to admin
+
+Role of the OS kernel:
+now its really hard to program to crash the OS
+program is not allowed to access to divices on CPU
+
+Storage(filesystems):
+cmd - read 
+systemcall = very direct in Linux
+cmd - open  = its actually letting the section of disk(named sector)
+Now SD card is not like a table(stack of stuffs) but it makes like tree.
+
+Memory(virtual memory)
+	has addresses per byte = per memory. 
+	＊＊＊基礎から覚える 最新OSのアーキテクチャー ― 第6回
+	32 bits limitation and uselessness of attachments because of lack of memory.
+	64 bits and ask them to have 128 gb, if memory runs out then OS will start to use hard-drive
+	watch one movie, stops it + minimize + forget then start watching 2nd movie
+		- the main memory will be used for 2nd movie and 1st movie will go to hard-drive
+		- if u watch 1st movie, it will take forever
+
+I/O and device drivers:
+	OS will constantly asks gadget "do you have anything to say now?" (gadget USB変換機など）
+	Mouse, interrupts cpu all the time, can have very very slight amount of lag
+	Somehow all of them must merged together 
+Keylogger = キー入力を監視するソフトウェア/ハードウェア
+
+Processes and scheduling:
+OS needs to find right processers to manage the tasks
+bogoMips = approximate power of the processor
+
+Disc Operating System:
+https://ja.wikipedia.org/wiki/DOS_(OS)
+DOS did not have protective mode = easily store and read memory.
+Program crash →　take out the program disk → turn off the computer → put in DOS
+
+Networking:
+OS one program can not retrieve data from other program, but all of those things is not in OS
+
+Security:
+
+Loader:
+manage file system for the user
+
+/proc (what is it?):
+usually file system deals with hard-drive
+file system does not show real files(?) = giving u somekind of info about system
+
+how to make a file in /proc for a function that can return some number
+
+/dev:
+shows what gadgets on the computer
+sda = hard-drive 
+
+kernel module = doesnt have main but a lot of functions
+kernel c coding = u dont use at all in application
+
+
+
+
+
+

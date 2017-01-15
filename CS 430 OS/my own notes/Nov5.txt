@@ -1,0 +1,22 @@
+Nov5.
+
+vmlinux: actual linux image(146m)
+want to install linux-source/boot/vmlinuz...
+
+boot/grub:
+recognize particular filesystem
+
+find | grep initrd :
+
+
+Covering chapter 4 and 5:
+
+
+Project4:
+Memory leaking, 
+going to use valgrind, and check instruction carefully
+maybe Monday after thx giving? he is not sure 
+
+
+tty:
+teletype - terminal session or line

@@ -1,0 +1,51 @@
+Oct20.
+
+Lab5, 6, 7 is in row
+There are decent amount of instructions
+Linux 3.2 is mostly comparable with linux 3.3(kinda~
+
+Lab6 
+blinking
+Lab7 
+control blinking
+
+
+Stress testing:
+/proc directory entries
+service integrated in kernel will allow some services
+= when application want access web-cam = instead of application goofing off, kernel does it
+Potetntial attack on this
+
+sudo su:
+allow us to play around with the modules(may cause non-booting too though)
+
+
+
+/proc/crypto_services.ko
+crpto_services.c (probably in the example
+writing something into the file and return incripted version
+(things we were doing lasttime)
+return 0 was the problem, = return 0 is acepted 0 bytes, which will give nothing to user
+return 1 = mean successing on one character = could cause to run function the amount of character of times
+
+
+User level and kernel level difference:
+there might be slight spelling mistake
+
+kernel modules and working on kernel actual directory:
+working on modules may cause problem, but
+if you try to re-write the actual directory may cause no more boot
+
+Linux boot CD =
+the Linux kernel will boot from the CD
+(usually used to install OS)
+
+preemptable area
+https://en.wikipedia.org/wiki/Preemption_(computing)
+タスクを一時的に中断する動作である
+
+killcat -9 cat:
+usually kills the running program as soon as possible(with -9)
+however usually kernel will not get stopped because they are prioritizing their job
+on much higher level
+

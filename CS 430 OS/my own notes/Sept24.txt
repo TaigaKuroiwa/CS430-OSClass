@@ -1,0 +1,34 @@
+Sept 24.
+
+Reminder-: we are in book right now
+
+
+the lines of comment in code is excellenet
+
+protected mode:
+right now running a command where interruption is possible,
+protected = stop using BIOS handling, turn off most of the interrupts and its 32-bit.
+CPU will enforce memory to do different stuff and they will do by themselves.
+System part of memeory is not controlled at all by the user. 
+has a interrupt controler. build a program to accesss to particular chip
+and start off doing one by one, such as lighting up the bulb.
+
+head.s:
+back in days, it only allowed integer math. so using decimal = by division of integers.
+checking if we have x86 processor
+
+idt: 
+interrupt districter table
+and paging
+Paging: 
+memory will divided in pages, and task is run the allocating pages. 
+And the rest of pages not used will be for program = clean memory space. 
+If the program save some page in program, OS need to save at particular O
+https://ja.wikipedia.org/wiki/ページング方式
+
+call main: 
+
+
+
+
+segment descripter

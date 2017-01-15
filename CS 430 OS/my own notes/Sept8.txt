@@ -1,0 +1,86 @@
+Sept 8. 
+
+Stuff people found:
+NVIDA taints kernel
+
+LKM:
+around since Linux 1.2 (1995) 
+
+change in kernel Å® take one of source code + add modification and compile = new OS
+it all works fine
+
+but practical disadvantage, must need back-up kernel if you mistake
+it may not boot after all. 
+
+you write somewhere else Å® into kernelÅ@Å® put out and put back in without rebooting
+is it much faster cycle
+
+maybe it might be slower, but once its in there no change at all
+
+
+Device Drivers:
+actually half file of the kernel, sound card, pci device, anyway a lot.
+"do you want in kernel or not?"when you compile 
+
+making your own kernel and post it on online = but may have problem with soundcard
+module is life saver = make everything smaller
+without module, you must specify and get specific devices for the computer
+pretty always an module
+
+filesystem:
+if running windows = tfs(team foundation server)
+in linux variety of filesystem is avilable 
+
+can add systemcalls:
+but very rare. inctl-
+
+network drivers:
+there quite a lot.
+there are some small minor niche network protocal 
+tcp - transmision control protocal
+
+Executable interpreter (ELF is normal, can add more):
+executable file, its in elf format. 
+(must check later)
+
+utilities]
+insmod - insert mod
+rmmod - remove, just takeoff mod but does not hunt down the source code
+depmod - check if there is any dependance module missing, help anaylize dependancy
+ksyms - kernel symbols
+lsmod - list the module in the kernel and tells if its used or not
+modinfo - information of mod, 
+modprobe - mod load or unload
+sudo - just do it what ever as a administartor
+
+Inserting modules:
+kernel must interact with module, but module must be able to see inside of kernel
+memory addresses(or symbols) tells where certain stuffs are so that module can see inside
+many spaces are available for the modules
+
+write in kernel log and put it in /proc so that they could debug easily
+
+Automatic loading:
+you don't actually find = kernel will just download it 
+autoclean = after module has not been used, it will unload it
+
+where are LKMs found?:
+usually /lib/modules
+uname -a , finds kernel currently running
+
+how insmod works:
+init_module system call
+init_module subroutine in module
+	- linking is done at insertion time
+
+we must keep on track of current kernel version 
+
+multiple kernel is actually possible
+
+theoretical module, 
+I want everything module = trouble accessing filesystem
+limits are there, but theoretically everything can be modules
+
+bootstrapping - described next week
+
+

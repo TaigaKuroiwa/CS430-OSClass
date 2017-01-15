@@ -1,0 +1,52 @@
+Sept29
+
+Midterm next week:
+will be ready on Thursday.
+pointers and pointers to struct
+	c structure to hard-drive
+	
+multiple question
+which one will be the correct function pointer
+	
+
+
+OS trivia: Xenix
+	it supposed be the important supporter of Microsoft
+	but once Microsoft created their own OS, they lost loyalty. 
+	SCO = very interesting sueing OS company
+
+OpenGL:
+	graphics api. 
+https://ja.wikipedia.org/wiki/OpenGL
+	it was unix solution for the movie effects
+	was eaten by Linux eventually
+Vulkan:
+	next-generation video game graphics api.
+	
+
+main function: 
+	in init, main.c
+	its void, and it has parameter of void
+	and ends with infinite loop
+	
+	auto int x 
+	http://www9.plala.or.jp/sgwr-t/c/sec12.html
+	
+	register
+	http://wisdom.sakura.ne.jp/programming/c/c50.html
+
+	inline, just like a macro
+	https://www.jpcert.or.jp/sc-rules/c-pre00-c.html (?)
+	http://www7b.biglobe.ne.jp/~robe/cpphtml/html01/cpp01066.html
+	
+	bitshifts
+
+	Paging memory
+	go check paging in wiki
+	
+	die function
+	do couple of debugging and kill the functions
+
+	
+	
+		

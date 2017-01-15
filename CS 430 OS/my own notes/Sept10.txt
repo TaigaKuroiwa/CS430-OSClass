@@ -1,0 +1,11 @@
+Sept 10
+
+Continuing from Sept 8 notes.
+
+when you write module:
+module_init, module_exit 
+must go in and out the kernel 
+
+kbleds = kernel log
+-/kmods
+

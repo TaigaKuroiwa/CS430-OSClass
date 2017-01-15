@@ -1,0 +1,22 @@
+Taiga Kuroiwa Lab1 CS 430
+
+1a. fs/timerfd.c line 230-235
+1b. fs/splice.c line 134-142
+1c. fs/splice.c line 154-162
+1d. fs/splice.c line 542-550
+1e. fs/pipe.c line 338-346
+
+2a. fs/seq_file.c line 219
+2b. fs/locks.c line 1623-1624
+2c. fs/eventpoll.c line 1054
+2d. fs/seq_file.c line 110
+2e. net/socket.c line 1383
+
+3a. fs/pipe.c line 687
+3b. arch/x86/pci/irq.c line 191
+3c. arch/x86/pci/irq.c line 404
+3d. arch/x86/pci/pcbios.c line 241
+3e. arch/x86/pci/mmconfig-shared.c line 621
+
+4. drivers/gpu/drm/nouveau/nouveau_sgdma.c line 419-422
+	writing personal message to NVIDIA

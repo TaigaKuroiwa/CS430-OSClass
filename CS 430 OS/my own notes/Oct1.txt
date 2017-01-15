@@ -1,0 +1,35 @@
+Oct1.
+
+To prepare for mid-term:
+	understand both p1 and p2
+	p2 questions = atleast know the pseudocode
+	better read chapters 1 and 2(while watchig through the notes)
+	closed book and notes
+	on next class
+
+Device Drivers.
+	das.c
+	handles devices' interrupts
+	dasmatch = actually finds if the device is match or not
+	disattach = hold parameters related with device and hand back somehting u need to with device
+		    das_softc* 
+		    buffer = date the we read the device
+	read = produce data (sampling data), 
+	interrupt handler = its dealing with the device (if you kill it, then PC will be locked).
+			    usually sleep for a while and handle(wake-up) again
+			    it occurs every time when sample comes in
+	you can check this das.c for a lot of help for P2
+	
+
+Linux 0.11:
+	rs_init
+	http://guiquanz.me/p/linux-0.11/kernel/chr_drv/serial.c.html
+	time is used a lot in kernel(kernel does not trust the clock on the PC).
+	
+schedulers:	
+	which processor run next + how long you can run?
+	ex. node in cluster = must be long schedule
+	http://www.itmedia.co.jp/enterprise/articles/0406/10/news002.html
+	http://www.uquest.co.jp/embedded/learning/lecture20.html
+
+system code:	

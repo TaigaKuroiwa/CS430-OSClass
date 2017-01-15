@@ -1,0 +1,49 @@
+Oct. 22
+
+Lab5,6,7:
+supposed to help you with project3,
+and project3 supposed to be the hardest and it is 20%.
+
+Project4,5:
+it supposed to be short, so he clunched up together. 
+
+Kernel codes: 
+you must try it on the lab computers. 
+
+Interrupt handling works:
+Look for the scancode, 
+its usually has multipul handler in OS = everything is like 2nd option.
+
+irq handler =
+must print something when u press Esc
+regardless of you pressed only3 times, it may show 4 times + spaces
+it usually happens in the kernel codes, 
+IRQ 1 = keyboard, 
+irqreturn_t 
+
+keyboard is not that complicated as a kernel module. (only scancode = inb(0x60))
+If its USB keyboard, we need to read from USB and all such. 
+
+keyboard scancode
+keyboard itself has a light to tell if its caps, but
+actually it does not send different scancode. 
+it will send extra scancode, but not renew everything
+there might be unknown key pressed, 
+OS difference? 
+
+Project3:
+need to make a password rule.
+take the scan code, figure out what those letters(scan code) and see if the password pass the rules
+handling the interrupt 
+must use /proc and use candidates(?)
+15% of bonus if you allow the usb input. 
+something will go wrong,
+can set timer too, 
+these things will be quite dangerous, but also you have chance that you could finish in 2-3 hours.
+
+
+filesystem in 30 days
+
+student/ment, mnet.c
+
+

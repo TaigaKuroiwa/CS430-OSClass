@@ -1,0 +1,91 @@
+Sept 15.
+
+project1:
+want to call a test and pointer to a bundle
+
+<!--
+bundle B;
+B.sorted_copy = 5;
+test(&B);
+-->
+
+vim Makefile → -g (just adding g will allows us to gdb)
+
+gdb use:
+gdb {name of program} = gdb project1
+
+gdb codes:
+run = runs the program
+run <param> 
+0x000000...00005 in ?? = at instruction 5, does not know what function are we trying to run
+
+backtrace = history of where we've been 
+main → test　→ something
+shows from bottom to up, because of stack system
+
+up = tells the next most recent stack and tells more info 
+
+print b = print bundle
+print b->sorted_copy = 
+
+info locals = see all the variables used in the code
+info args = 
+
+print len = print the len variable in the function
+p/x len = print the len variables in hex
+
+disassemble = look at machine instruction 
+instruction pointer = tells which function supposed to be running
+
+if you add break, then it will specifically stop BEFORE at that point 
+
+step = tells next possible function
+continue = run regardless of the break
+
+check Beej's quick guide to GDB
+quit →　y
+
+File system:
+good file system will not waste a space. 
+Windows Defrag tool 
+corrupted file = error in a file
+recovery 
+
+Realtime OS = prioritize the actual time 
+wiki リアルタイムオペレーティングシステム
+
+B-tree search: 
+size of the node is big, because the memory can read decent chunk of file → and then break down
+top of the tree probably end up in the cache
+
+FAT = file allocation table:
+table of files and each file has pointer to where the file starts
+
+4gb on fat32:
+increase the cluster and less location = more space usage
+
+when try to look for the middle of file...
+ususally it wants to start from initiate or at the end.
+ex. if you look for middle of movie, actually it starts from initiation point and load til the spot
+
+Low cpus:
+low cpu overhaed, ex. mp3 player = longer battery life
+finding is slow, but transfer rate is not bad
+
+OS support:
+all major os will support
+windows is the only major os that will run on FAT
+
+File system, OS perspectives:
+os needs to take a track of what user is using what
+
+inode:
+ls -i = show the inode numbers
+inode is actually a structure 
+
+
+P2 info:
+
+
+
+

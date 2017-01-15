@@ -1,0 +1,73 @@
+Sep 1
+
+lab1 info:
+	vim export.c ¨ then just type in 311
+	No.1 need to find the function pointer in a struct member (like c++ right after the libraries)
+	
+	No.1 cd fs/ntfs = implementation of windows file system
+	No.1 grep export_operations 
+	No.1 grep "const struct" * ¨ in vim, /const struct file_op
+	
+	No.2 mnt is a stucture ¨ ppd = mnt ->mnt_sb->s_export_op->get_parent(pd);
+	No.2 bunch of struct and then digging out function and calling it
+	No.2 cd ext4 ¨ grep -e "->" * ***-e is trying to interpret***
+	No.2 grep -3 "->......(" * or you could just follow up with possible names
+	No.2 grep fh_to_dentry ¨ nop->fh_to_dentry(mnt->....
+	https://github.com/crazyleen/linux-source-3.2/blob/master/fs/exportfs/expfs.c line 379
+	
+	No.3 grep -e " & " -r *
+	
+	No.4 grep -i broken * -r or grep -i torvalds | grep -v "Linus Torvalds"
+	you can just easily find the online source code and find it out
+
+prinft:
+	check the printf_demo.c
+	1 command 2 system function 3 c standard liblary = for the man command ex. man 3 printf
+	prinft("hi\n"); = simplest way + next 
+	./prlineintf_demo
+
+	int x = 100;
+	printf("hi %d\n");
+	d = integer x = hex c= character f=float lf=longfloat
+	
+	printf("hi %lx\n", &x); = lx and & tells the address of the variable (stack address)
+	printf("hi %lu\n", &x); 
+	
+pointer review: print out every item in an array
+	int A[10] = (2,3,4....);
+	
+	int* i;
+	for(i = A; i< A+10; i++)
+		printf("%d ", *i);
+
+	printf
+	//this is 64 bit and its moving the pointer due to the array
+	//integer is 4 bytes, so the difference of the address is tiny bit
+	//if its size_t, then there is little bit more address difference
+	
+	you can easily check from the example
+	if you change the pointer of a by doing a-1, then it will automatically 
+	change the address of the b too. 
+
+Function Pointers
+call the function by the memory address
+
+Scope:
+	check functionpointer.c
+	void (*p_foo)(int) = foo;
+	(*p_foo) pointer, and then calls vunction with the assigned int
+	take a function and call another function thx to void (*p_foo)(int)=foo
+	function prototypes 
+
+	in c, you do have to name the function to define it
+
+	type function pointer
+	pointer to the function pointer
+	
+	ex. int (*encode_fh)(struct inode *inode, __u32 *fh, int *max_len, struct inode *parent);
+	https://ja.wikipedia.org/wiki/ŠÖ”‚Ö‚Ìƒ|ƒCƒ“ƒ^
+	
+
+	
+
+	

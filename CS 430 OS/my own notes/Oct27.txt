@@ -1,0 +1,50 @@
+Oct 27.
+
+Lab info:
+autossh -R 1246:localhost:22 cat
+
+ssh -p 1246 localhost
+screen -r -d
+
+Project3 Kernel Module Keylogger:
+lsusb and can check the modules 
+
+https://github.com/nemumu/linux-keylogger
+
+Project3 Creating a Linux Filesystem:
+remfs 
+
+you need to do only one.
+
+
+Process1 and fork() chapter3:
+fork divide process into two.  grep "c$"
+also check msh.c 
+
+everything that has inode has file descriptor
+msh.c need to wait until all the other programs are done
+
+turnhandler in msh.c:
+return processline(?)
+processline is handle anykind of shell expantion
+inputfile descripter and outputfile descriptor (infd and outfd)
+go to expand.c:
+take a line and expanded it
+and also lookthrough our entry and use a lot of cases 
+
+pipeat in msh.c:
+
+arg_parse:
+for the command that is about to run
+also setting the last place into 0, to recognize as the last character
+
+dash:
+
+Interrupt handler
+https://osdn.jp/projects/linux-kernel-docs/wiki/2.3%E3%80%80%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E5%89%B2%E3%82%8A%E8%BE%BC%E3%81%BF%E5%87%A6%E7%90%86
+http://www.mnc.jp/INtime/user/intimedev.php?%B3%E4%A4%EA%B9%FE%A4%DF%A5%CF%A5%F3%A5%C9%A5%E9%A4%C8%B3%E4%A4%EA%B9%FE%A4%DF%A5%B9%A5%EC%A5%C3%A5%C9
+
+Kernel Module Programming Guide:
+http://www.tldp.org/LDP/lkmpg/2.6/html/lkmpg.html#AEN1194
+
+

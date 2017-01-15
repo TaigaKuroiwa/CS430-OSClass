@@ -1,0 +1,98 @@
+Aug 27
+
+How long do programmers program:
+	probably 2 hours? and rest of the day play ping-pong
+	focus is real
+
+project1 info:
+	wget isoptera.lcsc.edu/~seth/cs430/p1.zip
+	make
+	gcc tester.o solution.o -o project1
+	./project1
+	vim ***
+	
+Finding stuff in the kernel:
+	***really need to be aware of the versions = uname -a
+	cd /usr/share
+	*** control c is the stop
+
+	find | linux 
+	cd /usr/src Å® ls = all the source code of linux
+	cd linux-source-3.2 Å® ls Å® find | grep ".c$" | wc ***wc = wordcount***
+	grep -r -i broken * | grep -i cow *** i is igonre case, r is only, * everything***
+	"^" starts with what ever, "$"ends with whatever, 
+	| = for helping next search , named pipeline
+
+	find | grep -i camel Ç»Ç«Ç»Ç«
+	grep -r -i broken * | wc "number of lines, words, letters"
+	grep -r -i wrong | grep -i broken = only broken will be highlighted
+
+Review of C Programming on Unix
+Tools :
+	man = manual = system open command
+	you can search stuff with just typeing /*** 
+	
+	gcc compiler used in kernel, sometime other computers may use intel c compiler
+	kernel c programming depends on the compiler ex i =i++ Å® the other difference
+	have to use the same version as kernel using = very important
+	
+	kernel debugging gdb
+
+	vim/emacs/nano/pico/whatever = text editors
+	
+	make = making a program
+	gcc -std=c99 solution.c tester.c -o project1 = compiling the 
+	make = gcc tester.o solution.o -o project 1 , .o is object file = already compiled file
+	make is much faster and benefitable if the gcc is very long
+	vim Makefile = can see what make can do
+
+	cvs/subversion/git = editors
+	git clone isoptera:/home/git/ExpandArea = see everything in that area
+	git log = check the log
+	its a tool to makesure everything is in uptodate
+	
+C versions:
+	skipped
+
+speed comparison: c vs. python
+	sometimes assembly is faster, but most of the time C is faster
+	c is very fast, java is a lot faster than Python, c++ is comparable to C
+	need to respect how much memory would be used esp. union
+	union is like a struct and char, but will never gonna use both = only either
+	especially memory is very respected in mobiles
+	
+Pointers:
+	pointers can poin to any type, since it's just a number
+	size_t = give us right type for the right architecture
+	64 bit address sceam = can hold data stracture of 2-32 bits
+	*** must check read**
+	ssize_t = system call that shows error, on error -1 is returned
+	sizeof = tells the size of variable, 
+	pointer arithmatic *** going to next time***
+
+
+skipped to goto:
+	https://ja.wikipedia.org/wiki/Gotoï∂
+	error handling routine, 
+	have a random functionÅ@Å®Å@
+	Å™ and then it will automatically go down to the particular named place ex. goto err_exit_all
+	hacked version of exception handling
+	goto statment could be harmful = leads to spaghetti code = impossible to go through
+	***read wiki***
+	but definately used a lot in kernel for the error conditions
+	you can use goto for everything, but not recommended
+	
+	setjmp and longjmp 
+	http://www.nurs.or.jp/~sug/soft/super/longjmp.htm
+
+lab assignment
+	maybe scavenger hunt in linux-code
+
+	
+	
+	
+	
+	
+	
+	
+	

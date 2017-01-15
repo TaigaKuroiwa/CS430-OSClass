@@ -1,0 +1,37 @@
+forkbomb notes
+http://unix.stackexchange.com/questions/94778/how-to-stop-fork-bomb-out-of-memory-error-rhel-6
+http://codegolf.stackexchange.com/questions/24485/create-a-memory-leak-without-any-fork-bombs
+http://malware.wikia.com/wiki/Fork_bomb
+https://gist.github.com/gdisneyleugers/5212bf129c5ab5168308
+https://github.com/programble/forklimit/blob/master/forklimit.c
+https://github.com/QuanSushi/forkBOMB/blob/master/src/src/ForkBomb.java
+http://stackoverflow.com/questions/4940032/search-for-string-in-txt-file-python python how to check txt file-python
+http://stackoverflow.com/questions/1196074/starting-a-background-process-in-python how to start background process
+http://stackoverflow.com/questions/1605520/how-to-launch-and-run-external-script-in-background   
+
+used i loop 31 times, signal(i, ) 
+Gihbri
+
+
+final exam notes
+https://ja.wikipedia.org/wiki/GRUB ブートローダGRUB
+http://www.lpi.or.jp/column/linux/linux5.shtml ブートローダ
+http://www.linux-beginner.com/lpic_level1_11.html　ブートローダ
+
+https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0   スケジューリング
+http://www.f.ait.kyushu-u.ac.jp/~fukuda/HijyoukinH25/kitakyushu/5-6ProcessManagement.pdf  スライドショー式
+http://www.tera.ics.keio.ac.jp/person/tera/os/2004/OS-03-20041012.pdf　スライドショー
+
+https://www.freebsd.org/doc/ja_JP.eucJP/books/design-44bsd/overview-process-management.html　プロセス管理＋親子孤児プロセス
+http://qiita.com/SoyaTakahashi/items/f28d0b5ef404afd339fa　qiita
+http://oshiete.goo.ne.jp/qa/1968135.html　多々の意見
+
+http://wa3.i-3-i.info/word11035.html　絵付き、古い解説
+https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3_(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2)　デーモンdaemon
+https://rat.cis.k.hosei.ac.jp/article/rat/linuxliteracy/2005/daemon.html　デーモン説明
+
+https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%82%A8%E3%83%B3%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3
+
+http://www.atmarkit.co.jp/ait/articles/1101/26/news109.html　クラスタファイルシステム
+https://ja.wikipedia.org/wiki/%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0%E6%96%B9%E5%BC%8F
+http://e-words.jp/w/%E3%83%9A%E3%83%BC%E3%82%B8%E3%83%B3%E3%82%B0.html

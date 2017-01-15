@@ -1,0 +1,36 @@
+Sept17
+
+fsck
+
+filesystem: 
+	will not gonna go deep part of filesystme source code
+	file extension cannot be easily fool because they are decorative
+	example, privacy.pdf.jpg.docx.png
+	
+	pyramids.py
+	file could recognize its python
+
+	mounted in Linux for filesystem
+	check mount linux code
+	
+	in unix, all background is named daemon
+	
+filesystem have:
+	journaling 
+	B-tree = whole bunch of entries in the node so that you can see at once
+	Parallel support (xfs, etc)
+	Expansion
+		if you want add-on to the hard-drive
+	Aging
+		dfrag = roll back the clock of filesystem, its more like un-aging
+	Max file sizes
+		fat32 - 2TB
+		EXT2 - 2-32TB
+		
+ReiserFS: the B-tree revolution
+	journaling - Raid system
+		独立ディスク冗長アレイ (Redundant Array of Independent Disks, RAID) 
+		は複数のディスクドライブの構成部品 (一般的にはディスクドライブ
+		またはそのパーティション) をまとめて
+		一つの論理ユニットにするストレージ技術です。
+	
